@@ -25,7 +25,24 @@
 .cls-2 {
   fill: #2cb34a;
 }
-
+.small-hide1 {
+  position: absolute;
+  top: 14px;
+  left: 45px;
+  font-weight: 500;
+}
+.small-hide2 {
+  position: absolute;
+  top: 14px;
+  right: 174px;
+  font-weight: 500;
+}
+.small-hide3 {
+  position: absolute;
+  top: 14px;
+  right: 45px;
+  font-weight: 500;
+}
 h1 {
   color: $white;
   font-weight: 200;
@@ -55,7 +72,6 @@ i {
 .fas {
   color: white;
 }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -103,10 +119,10 @@ i {
     margin-top: 1px;
     background-color: rgba(181, 145, 80, 0);
     height: 50px;
-    border: 3px solid $green;
+    border: 3px solid rgba($green, 0.7);
     &:hover {
       transition: 0.1s;
-      background-color: rgba($green, 4);
+      background-color: rgba($green, 0.7);
       height: 48px;
       margin-top: 0;
     }
@@ -268,6 +284,9 @@ li {
   h2 {
     text-align: center;
   }
+  .stay {
+    height: 48px !important;
+  }
   .istay {
     position: absolute;
 
@@ -289,6 +308,11 @@ li {
   }
   a {
     width: 200px !important;
+  }
+  .small-hide1,
+  .small-hide2,
+  .small-hide3 {
+    display: none;
   }
 }
 @include mediaSm {
@@ -318,6 +342,11 @@ li {
     text-shadow: -1px 1px 1px black;
     text-align: center;
   }
+  .small-hide1,
+  .small-hide2,
+  .small-hide3 {
+    display: none;
+  }
 }
 
 @include mediaMd {
@@ -325,11 +354,31 @@ li {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
+  .small-hide1,
+  .small-hide2,
+  .small-hide3 {
+    display: none;
+  }
 }
 
 @include mediaLg {
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
+  }
+  .istay {
+    display: none !important;
+  }
+  i {
+    visibility: hidden !important;
+  }
+}
+
+@include mediaXl {
+  .istay {
+    display: none !important;
+  }
+  i {
+    visibility: hidden !important;
   }
 }
