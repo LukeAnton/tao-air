@@ -70,6 +70,9 @@
   padding: 0;
   margin: 0; }
 
+.current {
+  background-color: rgba(1, 31, 34, 0) !important; }
+
 .cls-1 {
   fill: #fff; }
 
@@ -127,7 +130,7 @@ i {
   .navbar a {
     display: inline-block;
     text-decoration: none;
-    width: 104px !important;
+    width: 138px !important;
     color: #ffffff;
     padding: 1.8vh;
     text-align: center;
@@ -157,7 +160,7 @@ i {
 
 .istay {
   position: absolute;
-  left: 42px; }
+  left: 60px; }
 
 li {
   list-style: none; }
@@ -280,18 +283,18 @@ li {
 
 @media screen and (max-width: 480px) {
   .tao-logo {
+    margin-left: -10px !important;
     width: 280px !important; }
   h3 {
     margin-top: 10px;
-    margin-left: 40px;
-    font-size: 13px;
-    letter-spacing: 2px;
+    margin-left: 40px !important;
+    font-size: 13px !important;
+    letter-spacing: 2px !important;
     font-weight: 900 !important; }
   h2 {
     text-align: center; }
   .istay {
     position: absolute;
-    left: 42px;
     top: 15px !important; }
   .landing-about {
     margin-left: 18px !important;
@@ -309,7 +312,26 @@ li {
 @media screen and (max-width: 500px) {
   .container {
     grid-template-columns: repeat(1, 1fr) !important;
-    grid-gap: 30px; } }
+    grid-gap: 30px; }
+  .tao-logo {
+    margin-left: -10px;
+    width: 250px; }
+  h3 {
+    margin-top: 10px;
+    margin-left: 55px;
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: 900 !important; }
+  .landing .landing-about {
+    max-width: 300px;
+    font-weight: 200;
+    margin-bottom: 50px;
+    font-size: 13px;
+    margin-left: 54px;
+    margin-top: 40px;
+    color: white;
+    text-shadow: -1px 1px 1px black;
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .container {
